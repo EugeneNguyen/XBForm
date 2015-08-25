@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="Tr7-fL-9q3" customClass="XBFormTableTextView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tr7-fL-9q3" id="BCd-K8-x0a">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JB3-Gx-YMc">
+                        <rect key="frame" x="8" y="11" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iRT-73-DUa">
+                        <rect key="frame" x="58" y="8" width="254" height="133.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="iRT-73-DUa" secondAttribute="trailing" constant="8" id="6WP-Gw-wUk"/>
+                    <constraint firstAttribute="bottom" secondItem="iRT-73-DUa" secondAttribute="bottom" constant="8" id="9pi-rc-BaU"/>
+                    <constraint firstItem="JB3-Gx-YMc" firstAttribute="top" secondItem="BCd-K8-x0a" secondAttribute="topMargin" constant="3" id="CUO-P1-ALk"/>
+                    <constraint firstItem="iRT-73-DUa" firstAttribute="leading" secondItem="JB3-Gx-YMc" secondAttribute="trailing" constant="8" id="bh4-v3-TyS"/>
+                    <constraint firstItem="iRT-73-DUa" firstAttribute="top" secondItem="BCd-K8-x0a" secondAttribute="top" constant="8" id="bj7-5c-zx8"/>
+                    <constraint firstItem="JB3-Gx-YMc" firstAttribute="leading" secondItem="BCd-K8-x0a" secondAttribute="leadingMargin" id="lwP-S2-lOi"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="JB3-Gx-YMc" secondAttribute="bottom" constant="3.5" id="peP-3B-Ihc"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="peP-3B-Ihc"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="titleLabel" destination="JB3-Gx-YMc" id="ZUc-Ga-mol"/>
+                <outlet property="valueTextView" destination="iRT-73-DUa" id="SKl-qb-iFz"/>
+            </connections>
+            <point key="canvasLocation" x="575" y="376.5"/>
+        </tableViewCell>
+    </objects>
+</document>

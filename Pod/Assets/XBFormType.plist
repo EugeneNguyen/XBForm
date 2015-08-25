@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>basiccell</key>
+	<dict>
+		<key>class</key>
+		<string>XBFormTableBasicCell</string>
+		<key>xib</key>
+		<string>XBFormTableTextField</string>
+		<key>preferedHeight</key>
+		<integer>44</integer>
+	</dict>
+	<key>textfield</key>
+	<dict>
+		<key>class</key>
+		<string>XBFormTableTextField</string>
+		<key>xib</key>
+		<string>XBFormTableTextField</string>
+		<key>preferedHeight</key>
+		<integer>44</integer>
+	</dict>
+	<key>textview</key>
+	<dict>
+		<key>class</key>
+		<string>XBFormTableTextView</string>
+		<key>xib</key>
+		<string>XBFormTableTextView</string>
+		<key>preferedHeight</key>
+		<integer>150</integer>
+	</dict>
+</dict>
+</plist>
